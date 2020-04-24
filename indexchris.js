@@ -21,6 +21,7 @@ function postPetPic() {
   };
   REQ.open("POST", "https://petstore.swagger.io/v2/pet/1/uploadImage");
   REQ.setRequestHeader("Content-Type", "Application/json");
+  REQ.toString(data);
   ///REQ.responseType = "json";
   REQ.send(data);
 }
