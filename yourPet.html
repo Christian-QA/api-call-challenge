@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!--
+	Hielo by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+  <head>
+    <title>Pet Store by Team Gates</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body class="subpage">
+    <!-- Header -->
+    <header id="header">
+      <div class="logo">
+        <a href="index.html">Hielo Pet Store <span>by Team Gates</span></a>
+      </div>
+      <a href="#menu">Menu</a>
+    </header>
+
+    <!-- Nav -->
+    <nav id="menu">
+      <ul class="links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="yourPet.html">Your Pet</a></li>
+        <li><a href="users.html">Users</a></li>
+        <li><a href="petGallary.html">Pet Gallery</a></li>
+        <li><a href="store.html">Pet Store</a></li>
+      </ul>
+    </nav>
+
+    <!-- One -->
+    <section id="One" class="wrapper style3">
+      <div class="inner">
+        <header class="align-center">
+          <p>Team Gates Productions</p>
+          <h2>Your Pet</h2>
+        </header>
+      </div>
+    </section>
+
+    <!-- Two -->
+    <section id="two" class="wrapper style2">
+      <div class="inner">
+        <div class="box">
+          <div class="content">
+            <header class="align-center">
+              <p>Gates Team Productions</p>
+              <h2>Please enter your pet details</h2>
+            </header>
+            <p></p>
+           
+
+            <p>
+              Add a pet
+			</p>
+			<form id="details" method="GET" action="PetForm.html">
+				<fieldset>
+					<legend>Animal</legend>
+					<ol>
+						<li>
+							<label for="animal">Animal:</label>
+							<select id="animal" name="animal">
+								<option value="Dog">Dog</option>
+								<option value="Cat">Cat</option>
+								<option value="Rabbit">Rabbit</option>
+								<option value="Hamster">Hamster</option>
+								<option value="Fish">Fish</option>
+								<option value="Parrot">Parrot</option>
+								<option value="Mouse">Mouse</option>
+						</li>
+						<ol>
+							<select>
+								<li>
+									<label for="Gender"> Gender: </label>
+									<id id="Gender" name="Gender">
+										<ul>
+										<li><label value="male">Male</label>
+										<input id="male" value="male" type="radio" name="gender" /></li>
+										<li><label value="female">Female</label>
+										<input id="female" value="female" type="radio" name="gender" /></ul>
+										
+								</li>
+						</ol>
+						<li>
+							<label for="name">Animal Name:</label>
+							<input id="animalName" name="animalName" type="animalName" />
+						</li>
+						<li>
+							<label for="id">Animal ID:</label>
+							<input id="animalId" name="animalId" type="animalId" />
+						</li>
+					</ol>
+				</fieldset>
+				<fieldset>
+					<button id="addButton" type="button">Submit</button>
+					<button id="reset" type="reset">Reset</button>
+				</fieldset>
+      </form>
+      <br>
+      <p>Delete a pet</p>
+      <input type="text" id="deleteId" />
+      <button type="button" id="deleteButton" >Delete</button>
+
+
+            <p>
+              Vivamus ultricies mollis mauris quis molestie. Quisque eu mi
+              velit. In et cursus nibh. Donec facilisis, orci sed mollis
+              hendrerit, nunc risus mattis odio, eget efficitur nisl orci a
+              lectus. Aenean finibus neque convallis orci sollicitudin
+              tincidunt. Vivamus lacinia facilisis diam, quis facilisis nisi
+              luctus nec. Aliquam ac molestie enim, ut ultrices elit. Fusce
+              laoreet vulputate risus in tincidunt. Sed commodo mollis maximus.
+              Nullam varius laoreet nibh sit amet facilisis. Donec ac odio
+              vehicula, consequat elit et, sodales justo. Vestibulum ante ipsum
+              primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+              Nullam ac auctor mauris, in hendrerit libero.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="container">
+        <ul class="icons">
+          <li>
+            <a href="#" class="icon fa-twitter"
+              ><span class="label">Twitter</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="icon fa-facebook"
+              ><span class="label">Facebook</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="icon fa-instagram"
+              ><span class="label">Instagram</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="icon fa-envelope-o"
+              ><span class="label">Email</span></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="copyright">
+        &copy; Untitled. All rights reserved.
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="yourPet.js"></script>
+  </body>
+</html>
