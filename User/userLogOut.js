@@ -9,8 +9,6 @@ function getLogOut() {
     if (REQ.status === 200) {
       console.log(REQ.response);
       sessionStorage.clear();
-      
-      document.getElementById("Logger").innerHTML = "hello";
 
       window.location.href = "http://127.0.0.1:5500/Group%20exercise%20gates/api-call-challenge/index.html";    
 
