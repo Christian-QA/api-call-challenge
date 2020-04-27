@@ -4,12 +4,13 @@ let order_butt = document.querySelector("#order_butt");
 
 function postOrder1() {
     // id=1;
-    let data = `{"id": ${1},"petId": 1,"quantity": 2,"shipDate": "2020-04-24T09:04:54.797Z","status": "placed","complete": false}`;
+    let data = `{"id": ${1},"petId": 1,"quantity": 2,"shipDate": "${new Date().valueOf()}","status": "placed","complete": false}`;
     REQ.open("POST", "https://petstore.swagger.io/v2/store/order");
     REQ.setRequestHeader("Content-Type", "Application/json");
     REQ.onload = () => {
         if (REQ.status === 200) {
             console.log(REQ.response);
+            alert("You purchased Ghost");
         } else {
             console.log(`Handle Error!`);
         }
@@ -19,12 +20,13 @@ function postOrder1() {
 
 function postOrder2() {
     // id=1;
-    let data = `{"id": ${2},"petId": 2,"quantity": 2,"shipDate": "2020-04-24T09:04:54.797Z","status": "placed","complete": false}`;
+    let data = `{"id": ${2},"petId": 2,"quantity": 2,"shipDate": "${new Date().valueOf()}","status": "placed","complete": false}`;
     REQ.open("POST", "https://petstore.swagger.io/v2/store/order");
     REQ.setRequestHeader("Content-Type", "Application/json");
     REQ.onload = () => {
         if (REQ.status === 200) {
             console.log(REQ.response);
+            alert("You purchased Andrex");
         } else {
             console.log(`Handle Error!`);
         }
@@ -34,12 +36,13 @@ function postOrder2() {
 
 function postOrder3() {
     // id=1;
-    let data = `{"id": ${3},"petId": 3,"quantity": 2,"shipDate": "2020-04-24T09:04:54.797Z","status": "placed","complete": false}`;
+    let data = `{"id": ${3},"petId": 3,"quantity": 2,"shipDate": "${new Date().valueOf()}","status": "placed","complete": false}`;
     REQ.open("POST", "https://petstore.swagger.io/v2/store/order");
     REQ.setRequestHeader("Content-Type", "Application/json");
     REQ.onload = () => {
         if (REQ.status === 200) {
             console.log(REQ.response);
+            alert("You purchased Albert");
         } else {
             console.log(`Handle Error!`);
         }
@@ -49,12 +52,13 @@ function postOrder3() {
 
 function postOrder4() {
     // id=1;
-    let data = `{"id": ${4},"petId": 4,"quantity": 2,"shipDate": "2020-04-24T09:04:54.797Z","status": "placed","complete": false}`;
+    let data = `{"id": ${4},"petId": 4,"quantity": 2,"shipDate": "${new Date().valueOf()}","status": "placed","complete": false}`;
     REQ.open("POST", "https://petstore.swagger.io/v2/store/order");
     REQ.setRequestHeader("Content-Type", "Application/json");
     REQ.onload = () => {
         if (REQ.status === 200) {
             console.log(REQ.response);
+            alert("You purchased Fermat");
         } else {
             console.log(`Handle Error!`);
         }
