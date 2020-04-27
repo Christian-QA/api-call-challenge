@@ -1,13 +1,14 @@
 const REQ = new XMLHttpRequest();
 let order_butt = document.querySelector("#order_butt");
-let data = '{"id": 1,"petId": 1,"quantity": 2,"shipDate": "2020-04-24T09:04:54.797Z","status": "placed","complete": true}';
 
-function postOrders() {
+
+function postOrder1() {
+    // id=1;
+    let data = `{"id": ${1},"petId": 1,"quantity": 2,"shipDate": "2020-04-24T09:04:54.797Z","status": "placed","complete": false}`;
     REQ.open("POST", "https://petstore.swagger.io/v2/store/order");
     REQ.setRequestHeader("Content-Type", "Application/json");
     REQ.onload = () => {
         if (REQ.status === 200) {
-            console.log(REQ);
             console.log(REQ.response);
         } else {
             console.log(`Handle Error!`);
@@ -15,5 +16,60 @@ function postOrders() {
     };
     REQ.send(data);
 }
-let postorder = document.querySelector("#postorder");
-postorder.addEventListener("click", postOrders);
+
+function postOrder2() {
+    // id=1;
+    let data = `{"id": ${2},"petId": 2,"quantity": 2,"shipDate": "2020-04-24T09:04:54.797Z","status": "placed","complete": false}`;
+    REQ.open("POST", "https://petstore.swagger.io/v2/store/order");
+    REQ.setRequestHeader("Content-Type", "Application/json");
+    REQ.onload = () => {
+        if (REQ.status === 200) {
+            console.log(REQ.response);
+        } else {
+            console.log(`Handle Error!`);
+        }
+    };
+    REQ.send(data);
+}
+
+function postOrder3() {
+    // id=1;
+    let data = `{"id": ${3},"petId": 3,"quantity": 2,"shipDate": "2020-04-24T09:04:54.797Z","status": "placed","complete": false}`;
+    REQ.open("POST", "https://petstore.swagger.io/v2/store/order");
+    REQ.setRequestHeader("Content-Type", "Application/json");
+    REQ.onload = () => {
+        if (REQ.status === 200) {
+            console.log(REQ.response);
+        } else {
+            console.log(`Handle Error!`);
+        }
+    };
+    REQ.send(data);
+}
+
+function postOrder4() {
+    // id=1;
+    let data = `{"id": ${4},"petId": 4,"quantity": 2,"shipDate": "2020-04-24T09:04:54.797Z","status": "placed","complete": false}`;
+    REQ.open("POST", "https://petstore.swagger.io/v2/store/order");
+    REQ.setRequestHeader("Content-Type", "Application/json");
+    REQ.onload = () => {
+        if (REQ.status === 200) {
+            console.log(REQ.response);
+        } else {
+            console.log(`Handle Error!`);
+        }
+    };
+    REQ.send(data);
+}
+
+let buy1 = document.querySelector("#buy1");
+buy1.addEventListener("click", postOrder1);
+
+let buy2 = document.querySelector("#buy2");
+buy2.addEventListener("click", postOrder2);
+
+let buy3 = document.querySelector("#buy3");
+buy3.addEventListener("click", postOrder3);
+
+let buy4 = document.querySelector("#buy4");
+buy4.addEventListener("click", postOrder4);

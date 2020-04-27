@@ -6,17 +6,16 @@
 -->
 <html>
   <head>
-    <title>Hielo by TEMPLATED</title>
+    <title>Jobs</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
-
-  <body class="subpage">
+  <body>
     <!-- Header -->
-    <header id="header">
+    <header id="header" class="alt">
       <div class="logo">
-        <a href="index.html">Heilo Pet Store <span>by Team Jobs</span></a>
+        <a id="helloUser" href="index.html"></a>
       </div>
       <a href="#menu">Menu</a>
     </header>
@@ -25,10 +24,13 @@
     <nav id="menu">
       <ul class="links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="yourPet.html">Your Pet</a></li>
-        <li><a href="users.html">Register</a></li>
-        <li><a href="petGallary.html">Pet Gallery</a></li>
-        <li><a href="store.html">Pet Store</a></li>
+        <!-- <li><a href="yourPet.html">Your Pet</a></li> -->
+        <li><a href="users.html" id="register">Register</a></li>
+        <li><a href="petGallary.html">Pet Store</a></li>
+
+        <li><a href="userLogIn.html" id="userLogin">Log In</a></li>
+        <li><a id="userLogOut" href="index.html">Log Out</a></li>
+        <li><a id="deleteUser">Delete User Account</a></li>
       </ul>
     </nav>
 
@@ -97,6 +99,7 @@
     </footer>
 
     <!-- Scripts -->
+    <script src="assets/js/index.js"></script>
     <script src="User/sessionData.js"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrollex.min.js"></script>
