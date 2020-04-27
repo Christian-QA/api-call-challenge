@@ -1,13 +1,10 @@
-//CREATE AN ORDER
-
+const REQ = new XMLHttpRequest();
 let order_butt = document.querySelector("#order_butt");
-let data = '{"petId": 2, "quantity": 2}';
+let data = '{"id": 1,"petId": 1,"quantity": 2,"shipDate": "2020-04-24T09:04:54.797Z","status": "placed","complete": true}';
 
 function orderPet() {
     REQ.open("POST", "https://petstore.swagger.io/v2/store/order");
     REQ.setRequestHeader("Content-Type", "Application/json");
-    // REQ.setRequestHeader('Access-Control-Allow-Origin', '*');
-    REQ.responseType = "json";
     REQ.onload = () => {
         if (REQ.status === 200) {
             console.log(REQ);
@@ -18,3 +15,5 @@ function orderPet() {
     };
     REQ.send(data);
 }
+let postorder = document.querySelector("#postorder");
+postprder.addEventListener("click", postOrders);
