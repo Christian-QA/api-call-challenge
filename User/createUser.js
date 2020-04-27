@@ -5,7 +5,7 @@ function createUser() {
         if (REQ.status === 200) {
             console.log(REQ.response);
             console.log("user created");
-            window.location.href = "http://127.0.0.1:5500/New%20Template/index.html";
+            window.location.href = "http://127.0.0.1:5500/Group%20exercise%20gates/api-call-challenge/index.html";
         } else {
             console.log('handle error');
         }
