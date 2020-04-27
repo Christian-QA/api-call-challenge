@@ -1,5 +1,6 @@
-const REQ = new XMLHttpRequest();
+/*
 
+const REQ = new XMLHttpRequest();
 //// Add Pic of Pet
 let form = document.querySelector("#form");
 let petID = document.querySelector("#petID");
@@ -7,7 +8,7 @@ let name = document.querySelector("#additionalMetadata");
 let pic = document.querySelector("#pic1");
 
 // POSTING INFORMATION TO THE SERVER
-let data = `{"petID": "${petID.value}","additionalMetadata": "${name.value}","file": "${pic.value}"}`;
+let data = `{"petID": ${petID.value},"additionalMetadata": "${name.value}","file": "${pic.value}"}`;
 
 let result = "'{";
 function getData() {
@@ -32,7 +33,7 @@ function postPetPic() {
       window.alert(`Oh no! Something has gone wrong :()`);
     }
   };
-  REQ.open("POST", "https://petstore.swagger.io/v2/pet/1/uploadImage");
+  REQ.open("POST", `https://petstore.swagger.io/v2/pet/${petID.value}/uploadImage`);
   REQ.setRequestHeader("Content-Type", "Application/json");
   //   REQ.toString(data);
   ///REQ.responseType = "json";
@@ -44,3 +45,5 @@ butt1.addEventListener("click", (event) => {
   event.preventDefault();
   postPetPic();
 });
+
+*/

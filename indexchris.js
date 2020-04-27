@@ -13,7 +13,7 @@ function getTodos() {
   };
   REQ.open("GET", "https://petstore.swagger.io/v2/swagger.json/");
   REQ.setRequestHeader("Content-Type", "Application/json");
-  REQ.setRequestHeader("Access-Control-Allow-Origin", "*");
+  // REQ.setRequestHeader("Access-Control-Allow-Origin", "*");
   REQ.responseType = "json";
   REQ.send();
 }
