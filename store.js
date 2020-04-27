@@ -2,7 +2,7 @@ const REQ = new XMLHttpRequest();
 let order_butt = document.querySelector("#order_butt");
 let data = '{"id": 1,"petId": 1,"quantity": 2,"shipDate": "2020-04-24T09:04:54.797Z","status": "placed","complete": true}';
 
-function orderPet() {
+function postOrders() {
     REQ.open("POST", "https://petstore.swagger.io/v2/store/order");
     REQ.setRequestHeader("Content-Type", "Application/json");
     REQ.onload = () => {
@@ -16,4 +16,4 @@ function orderPet() {
     REQ.send(data);
 }
 let postorder = document.querySelector("#postorder");
-postprder.addEventListener("click", postOrders);
+postorder.addEventListener("click", postOrders);
