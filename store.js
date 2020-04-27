@@ -1,4 +1,4 @@
-const REQ = new XMLHttpRequest();
+
 let order_butt = document.querySelector("#order_butt");
 
 
