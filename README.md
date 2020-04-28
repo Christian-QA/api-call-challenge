@@ -6,6 +6,13 @@ You can find the project board [here](https://github.com/CarolineS-QA/api-call-c
 
 The IDE I have been using is Visual Studio Code which you can find [here](https://code.visualstudio.com/).
 
+## Authors
+- \*_Caroline Strasenburg_ - _Author_ - [CarolineS-QA](https://github.com/Christian-QA) aka Chas3-Mahat(https://github.com/Chas3-Mahat)
+- \*_Christian Redfern_ - _Author_ - [Christian-QA](https://github.com/Christian-QA)
+- \*_Felix Marley_ - _Author_ - [Femarleycode](https://github.com/Femarleycode)
+- \*_Luke Smyth-Osbourne_ - _Author_ - [sosbourneQA](https://github.com/sosbourneQA)
+- \*_Safwan Akhtar_ - _Author_ - [Safwan-QA](https://github.com/Safwan-Akhtar)
+
 ## Contributors & Acknowledgements
 Please see [Contributors.md](Contributors.md) for a full list of contributors & acknowledgements.
 
