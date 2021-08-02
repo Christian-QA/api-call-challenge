@@ -3,7 +3,7 @@
 // GET USER
 
 const REQ2 = new XMLHttpRequest();
-let butt1 = document.querySelector("#get_user");
+let createUserButton = document.querySelector("#createUser");
 let username = document.querySelector("user.username");
 
 function getUser() {
@@ -24,4 +24,4 @@ function getUser() {
   REQ2.send();
 }
 
-butt1.addEventListener("click", getUser);
+createUserButton.addEventListener("click", getUser);

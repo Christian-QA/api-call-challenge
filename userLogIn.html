@@ -39,7 +39,7 @@
       <div class="inner">
         <header class="align-center">
           <p>Team Jobs Productions</p>
-          <h2>Register</h2>
+          <h2>User login</h2>
         </header>
       </div>
     </section>
@@ -50,8 +50,9 @@
         <div class="box">
           <div class="content">
             <header class="align-center">
-              <p>JOBs Team Productions</p>
-              <h2>Please enter your personal details</h2>
+              <p>Jobs Team Productions</p>
+              <h2>Please enter your login details</h2>
+              <h2 id="helloUser"></h2>
             </header>
             <p></p>
                 <legend>Your details</legend>
@@ -61,29 +62,10 @@
                     <input id="username" name="username" type="text" />
                   </li>
                   <li>
-                    <label for="firstName">First Name:</label>
-                    <input id="firstname" name="firstname" type="text" />
-                  </li>
-                  <li>
-                    <label for="surname">Surname:</label>
-                    <input id="surname" name="surname" type="text" />
-                  </li>
-                  <li>
-                    <label for="email">Email:</label>
-                    <input id="email" name="email" type="email" />
-                  </li>
-                  <li>
                     <label for="password">Password:</label>
                     <input id="password" name="password" type="password" />
                   </li>
-                  <li>
-                    <label for="Phone">Phone:</label>
-                    <input id="phone" name="phone" type="tel" />
-                  </li>
-                </ol>
-              </fieldset>
-              <fieldset>
-                <button id="createUser" type="submit">Submit</button>
+                <button id="getLogIn" type="submit">Submit</button>
           </div>
         </div>
       </div>
@@ -118,12 +100,12 @@
 
     <!-- Scripts -->
     <script src="assets/js/index.js"></script>
+    <script src="user/sessionData.js"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrollex.min.js"></script>
     <script src="assets/js/skel.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
-    <!-- <script src="User/getUser.js"></script> -->
-    <script src="user/createUser.js"></script>
+    <script src="user/getLogin.js"></script>
   </body>
 </html>

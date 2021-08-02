@@ -6,38 +6,39 @@
 -->
 <html>
   <head>
-    <title>Pet Gallery by Team Gates</title>
+    <title>Jobs</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
-
-  <body class="subpage">
+  <body>
     <!-- Header -->
-    <header id="header">
+    <header id="header" class="alt">
       <div class="logo">
-        <a href="index.html">Hielo Pet Store <span>by Team Gates</span></a>
+        <a id="helloUser" href="index.html"></a>
       </div>
       <a href="#menu">Menu</a>
     </header>
 
     <!-- Nav -->
     <nav id="menu">
-        <ul class="links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="yourPet.html">Your Pet</a></li>
-            <li><a href="users.html">Users</a></li>
-            <li><a href="petGallary.html">Pet Gallery</a></li>
-            <li><a href="store.html">Pet Store</a></li>
-        </ul>
-    </nav>
+      <ul class="links">
+        <li><a href="index.html">Home</a></li>
+        <!-- <li><a href="yourPet.html">Your Pet</a></li> -->
+        <li><a href="users.html" id="register">Register</a></li>
+        <li><a href="petGallary.html">Pet Store</a></li>
 
+        <li><a href="userLogIn.html" id="userLogin">Log In</a></li>
+        <li><a id="userLogOut" href="index.html">Log Out</a></li>
+        <li><a id="deleteUser">Delete User Account</a></li>
+      </ul>
+    </nav>
     <!-- One -->
     <section id="One" class="wrapper style3">
       <div class="inner">
         <header class="align-center">
-          <p>Team Gates Productions</p>
-          <h2>Pet Gallery</h2>
+          <p>Team Jobs Productions</p>
+          <h2>Store</h2>
         </header>
       </div>
     </section>
@@ -47,25 +48,65 @@
       <div class="inner">
         <div class="box">
           <div class="content">
-            <header class="align-center">
-              <p>Gates Team Productions</p>
-              <h2>Please upload your pet image</h2>
+            <header>
+              <h2 class="align-center">Ghost</h2>
+              <div><img src="images/pic01.jpg" alt="your dog" style="width:2500;height:600px;"></div>
+              <br>
+              <div>Husko</div>
+              <div>available for adoption</div>
+              <div class="align-right"><button id="buy1">buy</button></div>
             </header>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <form id="form">
-              <label for="petID">Id: </label><br />
-              <input type="text" id="petID" name="petID" /><br />
-              <label for="name1">Pet Name: </label><br />
-              <input type="text" id="additionalMetadata" name="name1" /><br />
-              <label for="pic1">Picture of Pet</label><br />
-              <input type="file" id="pic1" name="pic1" />
-              <input type="submit" id="butt1" value="Submit" />
-              <script src="./indexchris.js"></script>
-            </form>
+    <section id="two" class="wrapper style2">
+      <div class="inner">
+        <div class="box">
+          <div class="content">
+            <header>
+              <h2 class="align-center">Andrex</h2>
+              <div><img src="images/doggo1.jpg" alt="your dog" style="width:2500;height:600px;"></div>
+              <br>
+              <div>Puppo</div>
+              <div>available for adoption</div>
+              <div class="align-right"><button id="buy2">buy</button></div>
+            </header>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <p>
-              Files are limited to 500mb per image.
-            </p>
+    <section id="two" class="wrapper style2">
+      <div class="inner">
+        <div class="box">
+          <div class="content">
+            <header>
+              <h2 class="align-center">Albert</h2>
+              <div><img src="images/doggo2.jpg" alt="your dog" style="width:2500;height:600px;"></div>
+              <br>
+              <div>Fluffo</div>
+              <div>available for adoption</div>
+              <div class="align-right"><button id="buy3">buy</button></div>
+            </header>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="two" class="wrapper style2">
+      <div class="inner">
+        <div class="box">
+          <div class="content">
+            <header>
+              <h2 class="align-center">Fermat</h2>
+              <div><img src="images/doggo3.jpg" alt="your dog" id="petGalleryImage4" style="width:2500;height:600px;"></div>
+              <br>
+              <div>Puggo</div>
+              <div>available for adoption</div>
+              <div class="align-right"><button id="buy4">buy</button></div>
+            </header>
           </div>
         </div>
       </div>
@@ -103,11 +144,13 @@
     </footer>
 
     <!-- Scripts -->
+    <script src="user/userLogOut.js"></script>
+    <script src="assets/js/index.js"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrollex.min.js"></script>
     <script src="assets/js/skel.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
-    <script src="petGallary.js"></script>
+    <script src="assets/js/store.js"></script>
   </body>
 </html>

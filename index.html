@@ -6,7 +6,7 @@
 -->
 <html>
   <head>
-    <title>Gates</title>
+    <title>Jobs</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/main.css" />
@@ -15,7 +15,7 @@
     <!-- Header -->
     <header id="header" class="alt">
       <div class="logo">
-        <a href="index.html">Heilo Pet Store <span>by Team Gates</span></a>
+        <a id="helloUser" href="index.html"></a>
       </div>
       <a href="#menu">Menu</a>
     </header>
@@ -24,10 +24,13 @@
     <nav id="menu">
       <ul class="links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="yourPet.html">Your Pet</a></li>
-        <li><a href="users.html">Users</a></li>
-        <li><a href="petGallary.html">Pet Gallery</a></li>
-        <li><a href="store.html">Pet Store</a></li>
+        <!-- <li><a href="yourPet.html">Your Pet</a></li> -->
+        <li><a href="users.html" id="register">Register</a></li>
+        <li><a href="petGallary.html">Pet Store</a></li>
+
+        <li><a href="userLogIn.html" id="userLogin">Log In</a></li>
+        <li><a id="userLogOut" href="index.html">Log Out</a></li>
+        <li><a id="deleteUser">Delete User Account</a></li>
       </ul>
     </nav>
 
@@ -50,7 +53,6 @@
         <div class="inner">
           <header>
             <p>Trust us with your animals</p>
-            <h2>Over 200 years of animal handling</h2>
           </header>
         </div>
       </article>
@@ -216,11 +218,15 @@
     </footer>
 
     <!-- Scripts -->
+    <script src="user/sessionData.js"></script>
+    <script src="user/userLogOut.js"></script>
+    <script src="user/deleteUser.js"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrollex.min.js"></script>
     <script src="assets/js/skel.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
-    <script src="indexchris.js"></script>
+    <script src="assets/js/index.js"></script>
+    <!-- <script src="indexchris.js"></script> -->
   </body>
 </html>
