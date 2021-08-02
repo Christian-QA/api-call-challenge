@@ -13,7 +13,11 @@ The IDE I have been using is Visual Studio Code which you can find [here](https:
 - \*_Luke Smyth-Osbourne_ - _Author_ - [sosbourneQA](https://github.com/sosbourneQA)
 - \*_Safwan Akhtar_ - _Author_ - [Safwan-QA](https://github.com/Safwan-Akhtar)
 
+## Contributors & Acknowledgements
+Please see [Contributors.md](Contributors.md) for a full list of contributors & acknowledgements.
+
+
 ## License
 
 The site template used in this project is licensed under the [Creative Commons Attribution 3.0 Unported license](https://creativecommons.org/licenses/by/3.0/), and any additional underlying source code used to format and display that content is licensed under the [MIT license](LICENSE.md).
-=======
+
